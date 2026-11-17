@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CV Express : créez gratuitement un CV professionnel, personnalisé et adapté au métier recherché.">
+<meta name="theme-color" content="#172554">
+<title>CV EXPRESS — Créez un CV qui vous ressemble</title>
+<style>
+:root{--blue:#2447a8;--gold:#f0ad45;--ink:#172033;--muted:#667085;--bg:#f4f6fb;--line:#e5e9f2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Arial,Helvetica,sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.top{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:4}.topin{max-width:1150px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:1.4rem;font-weight:900;letter-spacing:-1px;color:#172554}.brand span{color:var(--gold)}.top small{color:var(--muted)}
+main{max-width:1150px;margin:30px auto;padding:0 20px}.hero{background:linear-gradient(120deg,#172554,#3159b6);color:white;padding:38px;border-radius:24px;display:grid;grid-template-columns:1.5fr .8fr;gap:24px;align-items:center}.eyebrow{color:#ffd58d;text-transform:uppercase;font-weight:bold;font-size:.76rem;letter-spacing:2px}.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.05;letter-spacing:-2px;margin:12px 0}.hero p{color:#e4ebff;max-width:620px}.heroaside{background:#ffffff17;border:1px solid #ffffff40;padding:22px;border-radius:18px}.heroaside strong{font-size:1.7rem;display:block}.layout{display:grid;grid-template-columns:235px 1fr;gap:22px;margin-top:24px}.side,.panel{background:white;border:1px solid var(--line);border-radius:17px;box-shadow:0 8px 25px #14264b08}.side{padding:17px;height:max-content;position:sticky;top:78px}.side b{display:block;margin-bottom:10px}.progress{height:7px;background:#edf0f6;border-radius:8px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--gold)}#progressText{font-size:.78rem;color:var(--muted)}.step{display:flex;gap:10px;align-items:center;padding:9px 7px;border-radius:10px;color:var(--muted);font-size:.88rem}.step em{font-style:normal;width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#eef0f5;font-size:.78rem}.step.active{background:#eef2ff;color:var(--blue);font-weight:bold}.step.active em{background:var(--blue);color:white}.privacyhint{font-size:.78rem;background:#fff8e9;padding:12px;border-radius:10px;color:#77521a;margin-top:12px}.panel{padding:28px;min-height:570px}.head{display:flex;justify-content:space-between;gap:12px;margin-bottom:24px}.head h2{margin:0 0 5px;font-size:1.55rem}.head p{margin:0;color:var(--muted)}.tag{background:#eef2ff;color:var(--blue);padding:6px 10px;border-radius:30px;height:max-content;font-size:.77rem;font-weight:bold}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:bold;font-size:.9rem}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d9dfeb;border-radius:10px;background:white;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{outline:3px solid #2447a81a;border-color:var(--blue)}.field small{color:var(--muted);font-size:.78rem}.actions{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:20px;margin-top:28px}.btn{border:0;border-radius:10px;padding:12px 18px;font-weight:bold}.primary{background:var(--blue);color:white}.secondary{background:#eef0f5;color:#344054}.gold{background:var(--gold);color:#30210a}.btn:disabled{opacity:.4;cursor:not-allowed}.hint{background:#f2f6ff;border:1px solid #dce6ff;padding:13px;border-radius:10px;font-size:.85rem;margin-top:18px}.privacy{display:flex;gap:10px;background:#f7f9fc;padding:14px;border:1px solid var(--line);border-radius:10px;font-size:.86rem}.privacy input{width:auto;margin-top:5px}.previewbox{background:#edf0f6;padding:16px;border-radius:12px;overflow:auto}.resume{background:white;max-width:760px;min-height:850px;margin:auto;padding:38px;box-shadow:0 5px 24px #17255418;color:#182235;font-family:var(--cvfont,Arial,sans-serif)}.resumeheader{display:flex;gap:20px;align-items:center;border-bottom:4px solid var(--cvcolor,#2447a8);padding-bottom:18px}.resume h1{margin:0;font-size:2rem;line-height:1.1}.resume .job{color:var(--cvcolor,#2447a8);font-weight:bold;margin:7px 0}.resume .contact{font-size:.82rem;color:#596579}.resume .photo{width:95px;height:112px;object-fit:cover;border-radius:8px}.resume h3{font-size:.85rem;color:var(--cvcolor,#2447a8);text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid #dce1ea;padding-bottom:5px;margin:22px 0 8px}.resume p,.resume li{font-size:.9rem;margin:5px 0}.resume ul{padding-left:20px}.hidden{display:none}footer{max-width:1150px;margin:25px auto 40px;padding:0 20px;color:var(--muted);font-size:.8rem;display:flex;justify-content:space-between;gap:15px}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding:26px}.layout{grid-template-columns:1fr}.side{position:static}.steps{display:grid;grid-template-columns:1fr 1fr}.panel{padding:20px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.top small{display:none}}
+@media print{body{background:white}.top,main> .hero,main>.layout,footer{display:none!important}#printArea{display:block!important}.previewbox{padding:0;background:white}.resume{box-shadow:none;max-width:none;padding:12mm;min-height:0}}
+#printArea{display:none}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin"><div class="brand">CV <span>EXPRESS</span></div><small>Votre parcours. Vos compétences. Votre prochain emploi.</small></div></header>
+<main>
+<section class="hero"><div><div class="eyebrow">Simple · Gratuit · Personnalisable</div><h1>Un CV qui vous ressemble.</h1><p>Répondez aux questions étape par étape, mettez en valeur vos compétences et créez un CV adapté au métier que vous recherchez.</p></div><div class="heroaside"><strong>Votre avenir commence ici.</strong><span>Un accompagnement pensé pour les étudiants, les débutants et toutes les personnes en recherche d'emploi.</span></div></section>
+<div class="layout">
+<aside class="side"><b>Création de votre CV</b><div class="progress"><i id="bar"></i></div><div id="progressText">Étape 1 sur 7</div><nav class="steps" id="steps"></nav><div class="privacyhint">Vos réponses restent dans cette page. Aucune donnée n'est envoyée à un serveur.</div></aside>
+<section class="panel"><div class="head"><div><h2 id="title"></h2><p id="desc"></p></div><span class="tag" id="tag"></span></div><div id="content"></div><div class="actions"><button class="btn secondary" id="prev">← Précédent</button><button class="btn primary" id="next">Continuer →</button></div></section>
+</div>
+<section class="panel hidden" id="printArea"><div class="previewbox"><article class="resume" id="resume"></article></div></section>
+</main>
+<footer><span>© CV EXPRESS — Un CV clair, adapté à votre projet.</span><span>Vos données vous appartiennent.</span></footer>
+<script>
+const steps=[
+{title:"Vos informations personnelles",desc:"Les coordonnées utiles pour vous contacter.",tag:"Identité",fields:[
+["prenom","Prénom","text",1],["nom","Nom","text",1],["email","Adresse e-mail","email",1],["telephone","Téléphone","tel",1],["ville","Ville de résidence","text",1],["mobilite","Mobilité géographique","select",0,["Localement","Dans la région","France entière","Déménagement possible","Télétravail souhaité"]],["photo","Photo (facultative)","file",0],["linkedin","LinkedIn ou portfolio (facultatif)","url",0]
+]},
+{title:"Votre projet professionnel",desc:"Pour adapter le CV à un poste et à un secteur précis.",tag:"Objectif",fields:[
+["metier","Quel métier ou poste recherchez-vous ?","text",1],["secteur","Secteur professionnel","select",1,["Automobile","BTP et construction","Décoration et aménagement","Vente et commerce","Restauration et hôtellerie","Informatique et numérique","Santé et social","Administratif","Logistique et transport","Industrie","Esthétique et coiffure","Agriculture et environnement","Sécurité","Tourisme et loisirs","Communication et marketing","Petite enfance","Autre"]],["secteurAutre","Si autre, précisez","text",0],["contrat","Type de contrat recherché","select",1,["Stage","Alternance / apprentissage","CDD","CDI","Intérim","Saisonnier","Job étudiant","Peu importe"]],["motivation","Pourquoi ce métier ou secteur vous intéresse-t-il ?","textarea",0],["objectif","Votre objectif professionnel","textarea",0],["disponibilite","Date de disponibilité","text",0],["rythme","Temps de travail souhaité","select",0,["Temps plein","Temps partiel","Horaires flexibles","Alternance","À discuter"]]
+]},
+{title:"Vos expériences",desc:"Les stages, jobs étudiants, projets et engagements sont aussi valorisables.",tag:"Expérience",fields:[
+["aExperience","Avez-vous déjà une expérience professionnelle ?","select",1,["Oui","Non"]],["poste","Intitulé du poste ou de l'expérience","text",0],["entreprise","Entreprise ou organisme","text",0],["lieuExperience","Ville de l'expérience","text",0],["datesExperience","Période (ex. juin à août 2025)","text",0],["missions","Missions réalisées et responsabilités","textarea",0],["reussite","Une réalisation ou responsabilité dont vous êtes fier/fière","textarea",0],["stagesProjets","Stages, projets scolaires, bénévolat ou activités utiles","textarea",0]
+]},
+{title:"Vos formations et diplômes",desc:"Indiquez vos diplômes obtenus et vos formations en cours.",tag:"Formation",fields:[
+["diplome","Dernier diplôme obtenu ou préparé","text",1],["specialite","Spécialité ou filière","text",0],["etablissement","Établissement de formation","text",0],["anneeDiplome","Année d'obtention ou prévue","text",0],["formationActuelle","Autre formation actuellement suivie","text",0],["certifications","Certifications, habilitations ou formations complémentaires","textarea",0]
+]},
+{title:"Compétences et qualités",desc:"Indiquez ce que vous savez réellement faire et ce qui est utile au poste.",tag:"Atouts",fields:[
+["competences","Compétences techniques et savoir-faire (séparez par des virgules)","textarea",1],["outils","Logiciels, machines ou outils maîtrisés","textarea",0],["qualites","Qualités professionnelles","textarea",1],["langues","Langues et niveaux (ex. anglais : intermédiaire)","textarea",0],["permis","Permis ou habilitations utiles au poste","text",0],["interets","Centres d'intérêt pertinents (facultatif)","textarea",0]
+]},
+{title:"Personnalisez votre CV",desc:"Choisissez une présentation lisible qui vous plaît.",tag:"Design",fields:[
+["couleur","Couleur principale","color",0],["police","Police d'écriture","select",0,["Arial","Georgia","Verdana","Trebuchet MS","Tahoma"]],["modele","Style du CV","select",1,["Moderne","Classique","Épuré"]],["avecPhoto","Afficher la photo sur le CV ?","select",0,["Non","Oui"]]
+]},
+{title:"Vérification et création",desc:"Dernière étape : choisissez si vous souhaitez conserver une copie sur cet appareil.",tag:"Finalisation",fields:[
+["consentement","Sauvegarde facultative","consent",0]
+]}
+];
+let index=0,answers={couleur:"#2447a8",police:"Arial",modele:"Moderne",avecPhoto:"Non"},photoURL="";
+const $=id=>document.getElementById(id);
+function safe(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function fieldHTML(f){let [id,label,type,required,options]=f,v=answers[id]??"",req=required?' <span style="color:#c2410c">*</span>':'';let control="";
+if(type==="select")control=`<select id="${id}"><option value="">Choisir…</option>${options.map(o=>`<option ${v===o?"selected":""}>${safe(o)}</option>`).join("")}</select>`;
+else if(type==="textarea")control=`<textarea id="${id}" placeholder="Votre réponse…">${safe(v)}</textarea>`;
+else if(type==="file")control=`<input id="${id}" type="file" accept="image/*"><small>Facultatif. La photo reste dans cette page.</small>`;
+else if(type==="consent")control=`<label class="privacy"><input id="consentement" type="checkbox" ${answers.consentement?"checked":""}><span>J'accepte d'enregistrer une copie de mes réponses dans le stockage local de ce navigateur. Sans cette case cochée, aucune sauvegarde n'est effectuée. Je pourrai effacer cette copie depuis ce navigateur.</span></label>`;
+else control=`<input id="${id}" type="${type}" value="${safe(v)}" ${type==="color"?'style="height:47px;padding:5px"':""}>`;
+return `<div class="field ${["textarea","consent"].includes(type)?"full":""}"><label for="${id}">${label}${req}</label>${control}</div>`}
+function render(){let s=steps[index];$("title").textContent=s.title;$("desc").textContent=s.desc;$("tag").textContent=s.tag;$("content").innerHTML=`<div class="fields">${s.fields.map(fieldHTML).join("")}</div>`;$("steps").innerHTML=steps.map((x,i)=>`<div class="step ${i===index?"active":""}"><em>${i+1}</em><span>${x.tag}</span></div>`).join("");$("bar").style.width=((index+1)/steps.length*100)+"%";$("progressText").textContent=`Étape ${index+1} sur ${steps.length}`;$("prev").disabled=index===0;$("next").textContent=index===steps.length-1?"Créer mon CV →":"Continuer →";
+s.fields.forEach(f=>{let el=$(f[0]);if(!el)return;el.addEventListener("input",()=>{if(f[2]==="file"){let file=el.files[0];if(file){if(file.size>3*1024*1024){alert("Choisissez une image de moins de 3 Mo.");el.value="";return}let reader=new FileReader();reader.onload=()=>photoURL=reader.result;reader.readAsDataURL(file)}}else answers[f[0]]=el.type==="checkbox"?el.checked:el.value})})}
+function validate(){let missing=steps[index].fields.filter(f=>f[3]&&!String(answers[f[0]]||"").trim());if(missing.length){alert("Merci de compléter : "+missing.map(f=>f[1]).join(", "));return false}return true}
+function section(title,content){return content?`<h3>${title}</h3>${content}`:""}
+function lines(v){return v?`<p>${safe(v).replace(/\n/g,"<br>")}</p>`:""}
+function bullets(v){if(!v)return"";let a=v.split(/[,;\n]/).map(x=>x.trim()).filter(Boolean);return a.length?`<ul>${a.map(x=>`<li>${safe(x)}</li>`).join("")}</ul>`:lines(v)}
+function build(){let a=answers,color=a.couleur||"#2447a8",photo=(a.avecPhoto==="Oui"&&photoURL)?`<img class="photo" src="${photoURL}" alt="Photo de ${safe(a.prenom)}">`:"";$("resume").style.setProperty("--cvcolor",color);$("resume").style.setProperty("--cvfont",a.police||"Arial");$("resume").innerHTML=`
+<div class="resumeheader">${photo}<div><h1>${safe(a.prenom)} ${safe(a.nom)}</h1><div class="job">${safe(a.metier||"Profil professionnel")}</div><div class="contact">${[a.email,a.telephone,a.ville,a.linkedin].filter(Boolean).map(safe).join(" · ")}</div></div></div>
+${section("Profil professionnel",lines(a.objectif||a.motivation))}
+${section("Compétences",bullets(a.competences))}
+${section("Expériences professionnelles",a.poste||a.entreprise||a.missions?`<p><b>${safe(a.poste)}</b> ${a.entreprise?"— "+safe(a.entreprise):""}</p><p>${safe([a.lieuExperience,a.datesExperience].filter(Boolean).join(" · "))}</p>${lines(a.missions)}${lines(a.reussite)}`:"")}
+${section("Stages, projets et engagements",lines(a.stagesProjets))}
+${section("Formation",`<p><b>${safe(a.diplome)}</b> ${a.specialite?"— "+safe(a.specialite):""}</p><p>${safe([a.etablissement,a.anneeDiplome].filter(Boolean).join(" · "))}</p>${lines(a.formationActuelle)}${lines(a.certifications)}`)}
+${section("Atouts complémentaires",`${lines(a.outils)}${lines(a.qualites)}${lines(a.langues)}${lines(a.permis)}${lines(a.interets)}`)}
+${section("Recherche",lines([a.contrat,a.disponibilite,a.rythme,a.mobilite].filter(Boolean).join(" · ")))}
+`;
+$("printArea").classList.remove("hidden");$("printArea").scrollIntoView({behavior:"smooth"});$("next").textContent="Télécharger mon CV en PDF";$("next").onclick=()=>window.print();
+if(a.consentement){try{localStorage.setItem("cvexpress_answers",JSON.stringify(a));alert("Votre CV est prêt. Une copie de vos réponses a été enregistrée sur cet appareil, comme demandé.")}catch(e){alert("Le navigateur n'a pas permis la sauvegarde. Votre CV reste affiché.")}}else{try{localStorage.removeItem("cvexpress_answers")}catch(e){}}
+}
+$("prev").onclick=()=>{if(index>0){index--;render()}};
+$("next").onclick=()=>{if(index===steps.length-1){build();return}if(!validate())return;index++;render()};
+render();
+</script>
+</body>
+</html>
